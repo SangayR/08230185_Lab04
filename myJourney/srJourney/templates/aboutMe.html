@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me | Sangay Rinchen</title>
-<style>
-body { font-family:'Segoe UI', Arial, sans-serif; background:#fdfdfd; color:#333; line-height:1.6; margin:0; padding:20px; }
-h1 { color:#00b4d8; text-align:center; margin-bottom:20px; }
-p { margin-bottom:15px; }
-a { display:inline-block; margin-top:20px; padding:10px 20px; background:#00b4d8; color:white; border-radius:25px; text-decoration:none; transition:0.3s; }
-a:hover { background:#0077b6; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #caf0f8, #fff);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      margin: 0;
+    }
+
+    .card {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease;
+    }
+
+    h1 {
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #023e8a;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
+  <div class="card">
+    <h1>About Me</h1>
+    <p><strong>Name:</strong> Sangay Rinchen</p>
+    <p><strong>Student ID:</strong> 123456</p>
+    <p><strong>Course:</strong> ICT C</p>
+    <p><strong>About:</strong> I am passionate about learning web development and exploring Django to create interactive and user-friendly applications that make learning enjoyable.</p>
+    <a href="{% url 'index' %}" class="btn">← Back to Journey</a>
 
-<h1>About Me</h1>
-<p><strong>Name:</strong> Sangay Rinchen</p>
-<p><strong>Student ID:</strong> 08230185</p>
-<p><strong>Course:</strong> B.Ed IT</p>
-<p><strong>About:</strong> I am passionate about learning web development and exploring Django as a framework to build interactive websites. I love combining my teaching skills with technology to inspire students and enhance learning.</p>
-
-<a href="index.html">Back to Portfolio</a>
-
+  </div>
 </body>
 </html>
